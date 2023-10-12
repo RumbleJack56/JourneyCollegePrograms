@@ -24,9 +24,7 @@ int main(){
         scanf("\n%d",&arr[i]);
     }
 
-    int elemToSearch;
-    printf("Enter Element to search: ");
-    scanf("\n%d",&elemToSearch);
+     
 
     int binSearchResult = binarySearch(arr,elemToSearch,0,sizeof(arr)/sizeof(arr[0]) -1);
     if (binSearchResult==-1){
