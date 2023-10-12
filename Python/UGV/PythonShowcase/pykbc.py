@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import requests
 
-def acquireQuestions():
+def acquireQuestions(genre: str):
     """Queries the Internet and sends a dictionary of genre and 2d array of question answer as key value pair"""
     browser = requests.get("https://rjxdatascrapper.netlify.app/")
     code = BeautifulSoup(browser.content,"lxml")
@@ -16,8 +16,14 @@ def acquireQuestions():
     questions = [[question.getText().strip().split("|") for question in topic.findAll(attrs={"class":"question"})] for topic in topics ]    
     # print(questions)
     print(dict(zip(topicnames,questions)))
-acquireQuestions()
+# acquireQuestions()
 
 
 
-# def 
+def main():
+    w = tkinter.Tk()
+    w.mainloop()
+
+
+if __name__ == "__main__":
+    main()
