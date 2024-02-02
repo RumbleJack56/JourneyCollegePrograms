@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 1rem;
+            border: 0;
+        }
+        body{background-color: wheat;}
+        .dtu_logo{
+            position: absolute;
+            left: 3%;
+            top: 5%;
+            width: 100px;
+            height: 100px;
+        }
+        .stickyHeader{
+            text-align: center;
+        }
+        header{
+            position: sticky;
+            bottom: 2rem ;
+            width: 100%;
+            height: 3rem;
+            z-index: 5;
+        }
+        header ul{
+            height: 100%;
+            list-style: none; 
+        }
+        header ul li{
+            height: 100%;
+            display: inline-block;
+            margin: 0 2rem;
+        }
+        .mainHeading{
+            font-family: "Hacked";
+            font-weight: bolder;
+            font-size: 4rem;
+            color: white;
+            text-shadow: 0 0 10px black,0 5px 10px grey,5px 0 10px ;
+        }
+        .secTitle{
+            color: #381fa6fe;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .textarea{
+            position: relative;
+            top:10em;
+        }
+    </style>
+    <title>Computer Science Department</title>
+    <link rel="icon" type="img/png" href="dtu.png" sizes="96x96">
+</head>
+<body>
+    <header class="stickyHeader">
+        <nav class="navBar">
+            <img src="dtu.png" class="dtu_logo">
+            <h1 class="mainHeading">Computer Science Department</h1>
+            <p class="secTitle">Technology beyond the ages</p>
+        </nav>
+        <ul>
+            <li>Elem1</li>
+            <li>Elem2</li>
+            <li>Elem3</li>
+        </ul>
+    </header>
+    <div class="textarea">
+        <ol type="I">
+            <li><b>This is first element of ordered list</b></li>
+            <li><i>Ordered lists can have elements with marking denoting element number</i></li>
+            <li><u>Unordered lists do not have that. The Elem1 to Elem3 are written in an unordered list</u></li>
+            <li><em>Definition lists are given <sub>below</sub></em></li>
+        </ol>
+        <br><br>
+        <dl style="font-style: italic;">
+            <dt>Ordered Lists</dt>
+            <dd>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.
+
+                The list items will be marked with numbers by default</dd>
+            <dt>Unodered List</dt>
+            <dd>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.
+
+                The list items will be marked with bullets (small black circles) by default:</dd>
+            <dt>Definition List</dt>
+            <dd>A description list is a list of terms, with a description of each term.
+
+                The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:</dd>
+        </dl>
+    </div>
+</body>
+</html>
